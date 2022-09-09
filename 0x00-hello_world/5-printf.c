@@ -2,9 +2,9 @@
 /**
   *main - entry point
   *
-  *return: 0 at the end of function
+  *Description: This prints out an output
   *
-  *return: Always 0 (Success)
+  *Return: Always 0 (Success)
   */
 
 int main(void)
