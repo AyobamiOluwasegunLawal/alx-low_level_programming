@@ -2,6 +2,8 @@
 /**
   *main - entry point
   *
+  *return: 0 at the end of function
+  *
   *return: Always 0 (Success)
   */
 
