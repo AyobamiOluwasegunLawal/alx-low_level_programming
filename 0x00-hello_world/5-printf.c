@@ -1,15 +1,15 @@
 #include <stdio.h>
+
 /**
-  *main - entry point
+  *main - Entry point
   *
   *Description: This prints out an output
   *
-  *Return: Always 0 (Success)
+  *Return: O to the output
   */
 
 int main(void)
 {
-	printf("with proper grammer, but the outcome is a piece of art,\n");
-	fprintf(stderr, "//anything");
+	printf("with proper grammer, but the outcome is a piece og art,\n");
 	return (0);
 }
