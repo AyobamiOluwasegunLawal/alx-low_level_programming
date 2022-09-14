@@ -1,9 +1,10 @@
 #include <stdio.h>
+int _putchar(char c);
 
 /**
   *main - Entry point
   *
-  *Description: Prints -putchar
+  *Description: To print out _putchar
   *
   *Return: 0 when successful
   */
@@ -18,7 +19,7 @@ int main(void)
 	putchar('h');
 	putchar('a');
 	putchar('r');
-	putchar('\n');
 
 	return (0);
 }
+
