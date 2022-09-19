@@ -17,5 +17,12 @@ int main(void)
 	printf("a=%d, b=%d\n", a, b);
 	swap_int(&a, &b);
 	printf("a=%d, b=%d\n", a, b);
+
+	a = 1024;
+	b = -4096;
+	printf("a=%d, b=%d\n", a, b);
+	swap_int(&a, &b);
+	printf("a=%d, b=%d\n", a, b);
+
 	return (0);
 }
