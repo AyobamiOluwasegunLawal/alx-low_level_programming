@@ -1,1 +1,1 @@
-This contains more examples of nested loop
+this project involves pointers, arrays and strings
