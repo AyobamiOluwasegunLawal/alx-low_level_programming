@@ -1,30 +1,26 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code
+ * _atoi - converts a string to an integer
  *
- * Return: Always 0.
- */
-int main(void)
-{
-	int nb;
+ * @s: string input parameter
+ *
+ * Return: converted integer from string
+*/
 
-	nb = _atoi("98");
-	printf("%d\n", nb);
-	nb = _atoi("-402");
-	printf("%d\n", nb);
-	nb = _atoi("          ------++++++-----+++++--98");
-	printf("%d\n", nb);
-	nb = _atoi("214748364");
-	printf("%d\n", nb);
-	nb = _atoi("0");
-	printf("%d\n", nb);
-	nb = _atoi("Suite 402");
-	printf("%d\n", nb);
-	nb = _atoi("  +  +  -    -98 Battery Street; San Francisco, CA 94111 - US");
-	printf("%d\n", nb);
-	nb = _atoi("---++++ -++ Sui - te -   402 #cisfun :)");
-	printf("%d\n", nb);
-	return (0);
+int _atoi(char *s)
+{
+	unsigned int num = 0;
+	int sign = 1;
+
+	do {
+		if (*s == '-')
+			sign *= -1;
+		else if (*s >= '0' && *s <= '9')
+			num = (num * 10) + (*s - '0');
+		else if (num > 0)
+			break;
+	} while (*s++);
+
+	return (num * sign);
 }
