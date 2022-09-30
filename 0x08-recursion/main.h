@@ -1,6 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
-
+int wildcmp(char *s1, char *s2);
 int _putchar(char);
 void _puts_recursion(char *);
 void _print_rev_recursion(char *);
