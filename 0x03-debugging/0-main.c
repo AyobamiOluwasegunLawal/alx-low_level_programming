@@ -2,7 +2,7 @@
 
 /**
  * positive_or_negative -  to check for positive or negative integer
- @i: integer to check
+ * @i: integer to check
  */
 void positive_or_negative(int i)
 {
