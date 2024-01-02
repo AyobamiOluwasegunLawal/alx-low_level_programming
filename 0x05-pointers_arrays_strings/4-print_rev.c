@@ -17,6 +17,11 @@ void print_rev(char *s)
 
 	while (s >= reset)
 	{
+		if (*s == 0)
+		{
+			--s;
+			continue;
+		}
 		_putchar(*s);
 		--s;
 	}
