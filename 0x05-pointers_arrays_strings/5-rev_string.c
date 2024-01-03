@@ -2,20 +2,21 @@
 
 /**
  * rev_string - Reverses string
- * @c: input pointer to string
+ * @s: input pointer to string
  */
-void rev_string(char *c)
+void rev_string(char *s)
 {
-	int i = 0, len =  0;
 	char temp;
+	int i = 0, len = 0;
 
 	while (s[i++])
+	{
 		len++;
-
-	for (i = len - 1; i >= len / 2; i++)
+	}
+	for (i = len - 1; i >= len / 2; i--)
 	{
 		temp = s[i];
-		s[i] = s[len - i - 1];
-		s[len - i - 1] = temp;
+		s[i] = s[len - 1 - i];
+		s[len - 1 - i] = temp;
 	}
 }
