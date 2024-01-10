@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * *memcpy - copies value to a particular memory location
+ * *_memcpy - copies value to a particular memory location
  * @dest: pointer destination location
  * @src: pointer to source location
  * @n: number of value to change
