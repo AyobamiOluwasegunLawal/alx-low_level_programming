@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * sqrt - find square root
+ * _sqrt - find square root
  * @a: number
  * @i: iteration
  *
@@ -23,5 +23,5 @@ int _sqrt(int a, int i)
  */
 int _sqrt_recursion(int n)
 {
-	return (_sqrt(n, 0));	
+	return (_sqrt(n, 0));
 }
