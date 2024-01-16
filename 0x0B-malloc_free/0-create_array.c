@@ -2,7 +2,7 @@
 
 /**
  * *create_array - creates an array of chars
- and initializes it with a specific char.
+ * and initializes it with a specific char.
  * @size: size of the array
  * @c: contain character
  *
@@ -17,7 +17,7 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	if (arr == NULL)
 		return (NULL);
-	for(i = 0; i < (int) size; i++)
+	for (i = 0; i < (int) size; i++)
 		arr[i] = c;
 	return (arr);
 }
