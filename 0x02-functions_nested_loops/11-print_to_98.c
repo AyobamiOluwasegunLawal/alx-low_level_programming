@@ -11,7 +11,12 @@ void print_to_98(int n)
 
 	while (1)
 	{
-		num = convert_to_positive(n);
+		num = n;
+		if (num < 0)
+		{
+			_putchar('-');
+			num = -n;
+		}
 		temp = num;
 		div = 1;
 
