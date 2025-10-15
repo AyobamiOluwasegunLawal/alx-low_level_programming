@@ -32,7 +32,7 @@ void print_to_98(int n)
 		{
 			digit = num / div;
 			_putchar(digit + '0');
-			num %= 10;
+			num %= div;
 			div /= 10;
 		}
 
