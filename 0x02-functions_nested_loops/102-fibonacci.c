@@ -8,17 +8,8 @@
 
 int main(void)
 {
-	long int startOne = 1;
-	long int startTwo = 2;
-	long int count = 5;
-	long int div;
-	long int tempSum;
-	long int num;
-	long int digit;
-
-	long int sum = 0; 
-	long int tempOne = startOne;
-	long int tempTwo = startTwo;
+	long int startOne = 1, startTwo = 2, count = 5, div, tempSum, num, digit;
+	long int sum = 0, tempOne = startOne, tempTwo = startTwo;
 
 	_putchar(startOne + '0');
 	_putchar(',');
@@ -27,11 +18,9 @@ int main(void)
 	_putchar(',');
 	_putchar(' ');
 
-	while (count <= 50)
+	while (count <= 52)
 	{
 		sum = tempOne + tempTwo;
-
-
 		div = 1;
 		tempSum = sum;
 		while (tempSum > 9)
@@ -39,7 +28,6 @@ int main(void)
 			tempSum /= 10;
 			div *= 10;
 		}
-
 		num = sum;
 		while (div > 0)
 		{
@@ -48,20 +36,15 @@ int main(void)
 			num %= div;
 			div /= 10;
 		}
-
 		if (count != 50)
 		{
 			_putchar(',');
 			_putchar(' ');
 		}
-
 		tempOne = tempTwo;
 		tempTwo = sum;
-
 		count++;
 	}
-
 	_putchar('\n');
-	
 	return (0);
 }
