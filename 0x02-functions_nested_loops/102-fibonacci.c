@@ -36,7 +36,7 @@ int main(void)
 			num %= div;
 			div /= 10;
 		}
-		if (count != 50)
+		if (count != 52)
 		{
 			_putchar(',');
 			_putchar(' ');
