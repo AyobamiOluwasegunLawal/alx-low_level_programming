@@ -7,7 +7,8 @@
 
 void print_number(int n)
 {
-	int temp, div, num, digit;
+	int div, digit;
+	long int num, temp;
 
 	num = n;
 	if (num < 0)
