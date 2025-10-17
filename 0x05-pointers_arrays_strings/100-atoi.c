@@ -9,7 +9,7 @@
 int _atoi(char *s)
 {
 	int i, count = 0;
-	int temp = 0;
+	signed int temp = 0;
 	int sign = 1;
 	short int digitFound = 0;
 
