@@ -29,6 +29,5 @@ int _atoi(char *s)
 		else if (digitFound)
 			break;
 	}
-
-	return (sign * temp);		
+	return (sign * temp);
 }
