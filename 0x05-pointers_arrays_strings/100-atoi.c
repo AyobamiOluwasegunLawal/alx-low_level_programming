@@ -8,16 +8,20 @@
 
 int _atoi(char *s)
 {
-	int i, count = 0;
+	int i = 0;
 	unsigned int temp = 0;
 	int sign = 1;
 	short int digitFound = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (s[i] != '\0' && (s[i] < '0'))
 	{
-		if (s[i] == '-' && !digitFound)
+		if (s[i] == '-')
 			sign = -sign;
+		i++;
+	}
 
+	for (; s[i] != '\0'; i++)
+	{
 		if (s[i] >= '0' && s[i] <= '9')
 		{
 			digitFound = 1;
